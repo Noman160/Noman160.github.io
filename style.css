@@ -46,7 +46,7 @@ body {
 }
 
 section {
-    /* min-height: 100vh; */
+    min-height: 100vh;
     padding: 1rem;
 }
 
@@ -143,6 +143,11 @@ header .navbar ul li a:hover {
     background: var(--yellow);
 }
 
+header .navbar ul li.active a {
+    background: var(--yellow);
+}
+
+
 #menu {
     position: fixed;
     top: 2rem;
@@ -161,11 +166,11 @@ header .navbar ul li a:hover {
     justify-content: center;
     flex-flow: column;
     padding: 0 15rem;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 
 .home h3 {
-    padding-top: 5rem;
+    /* padding-top: 5rem; */
     font-size: 3rem;
     color: rgb(0, 0, 0);
 }
@@ -219,7 +224,7 @@ header .navbar ul li a:hover {
     background: #333;
     color: #fff;
     cursor: pointer;
-    margin: 1rem 0 2rem 0;
+    margin: 1rem 0 0rem 0;
     font-size: 1.6rem;
     border-radius: 5rem;
 }
@@ -229,57 +234,6 @@ header .navbar ul li a:hover {
     color: #fff;
 }
 
-/* center line skill */
-/* .skill {
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    padding: 0 10rem 10rem 10rem;
-}
-
-.skill .container {
-    display: flex;
-    justify-content:center;
-    flex-wrap: wrap;
-    padding: 1rem;
-    text-align: center;
-}
-
-.skill .container .set {
-    width: 35%;
-    margin: 2rem 2rem;
-    padding: 1rem 0;
-    position: relative;
-    font-size: 1.8rem;
-    background: #fff;
-    border-radius: 1rem;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
-    border: .3rem solid #111;
-} */
-
-/* .skill .container .set .icon{
-    font-size: 4rem;
-    color: #fff;
-    text-align: center;
-} */
-
-/* .skill .container .set .icon span{
-    background: var(--yellow);
-    padding: 0.8rem;
-    border-radius: 1.5rem;
-} */
-
-/* .skill .container .set ul.list {
-    display: inline-block;
-    text-align: left;
-    font-weight: bold;
-}
-
-.skill .container .set h1 {
-    padding: 0 0 2rem 0;
-    color: var(--yellow);
-    text-align: center;
-} */
 
 /* left sided skill */
 
@@ -287,14 +241,15 @@ header .navbar ul li a:hover {
     display: flex;
     justify-content: center;
     flex-flow: column;
-    padding: 0 10rem 10rem 10rem;
+    padding: 0 10rem 150px 10rem;
+    /* min-height: 100vh; */
 }
 
 .skill .container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 1rem;
+    padding-top: 3rem;
     /* text-align: center; */
 }
 
@@ -324,8 +279,7 @@ header .navbar ul li a:hover {
 
 
 .education {
-    padding: 0 15rem;
-    padding-top: 1rem;
+    padding: 0 0 150px 15rem;
 }
 
 .education .box-container {
@@ -333,6 +287,7 @@ header .navbar ul li a:hover {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-top: 3rem;
 }
 
 .education .box-container .box {
@@ -385,31 +340,67 @@ header .navbar ul li a:hover {
 }
 
 
-/* .portfolio .box-container {
+
+
+
+
+
+.research {
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-flow: column;
+    padding: 0 15rem;
 }
 
-.portfolio .box-container .box {
-    height: 20rem;
-    width: 25rem;
-    border-radius: 1rem;
-    margin: 1rem;
-    overflow: hidden;
-    cursor: pointer;
+.research .researchdetail h3 {
+    padding-top: 3rem;
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
 }
 
-.portfolio .box-container .box img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+.research .researchdetail h5 {
+    font-size: 2rem;
+    color: rgb(24, 24, 24);
 }
 
-.portfolio .box-container .box:hover img {
-    transform: scale(1.2);
-} */
+.research .researchdetail h7 {
+    font-size: 2rem;
+    color: rgb(14, 158, 139);
+    font-weight: bold;
+}
+
+.research .researchdetail p {
+    font-size: 1.7rem;
+    color: rgb(75, 73, 73);
+    padding: 1rem 0;
+    text-align: justify;
+}
+
+
+
+.research .project {
+    padding-top: 2rem;
+    padding-bottom: 150px;
+}
+
+.research .project h3 {
+    font-size: 2.5rem;
+    padding-top: 3rem;
+    text-align: justify;
+}
+
+.research .project p {
+    font-size: 1.7rem;
+    text-align: justify;
+    color: rgb(75, 73, 73);
+}
+
+.research .project h5 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgb(14, 158, 139);
+    text-align: justify;
+}
 
 .research .image-container {
     display: flex;
@@ -443,7 +434,7 @@ header .navbar ul li a:hover {
     position: fixed;
     top: 0;
     left: 10rem;
-    background: rgb(0, 0, 0, 0.1);
+    background: #222;
     height: 100%;
     width: 100%;
     z-index: 100;
@@ -454,8 +445,8 @@ header .navbar ul li a:hover {
     position: absolute;
     top: 0;
     right: 180px;
-    font-size: 60px;
-    font-weight: bolder;
+    font-size: 70px;
+    /* font-weight: bolder; */
     color: #fff;
     cursor: pointer;
     z-index: 100;
@@ -474,141 +465,16 @@ header .navbar ul li a:hover {
 
 
 
-.research {
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    padding: 0 15rem;
-    padding-top: 1rem;
-}
-
-.research .researchdetail h3 {
-    padding-top: 2.5rem;
-    font-size: 3rem;
-    color: rgb(0, 0, 0);
-}
-
-.research .researchdetail h5 {
-    font-size: 2rem;
-    color: rgb(24, 24, 24);
-}
-
-.research .researchdetail h7 {
-    font-size: 2rem;
-    color: rgb(14, 158, 139);
-    font-weight: bold;
-}
-
-
-
-.research .researchdetail p {
-    font-size: 1.7rem;
-    color: rgb(75, 73, 73);
-    padding: 1rem 0;
-    text-align: justify;
-}
-
-
-
-.research .project {
-    padding-top: 2rem;
-}
-
-.research .project h3 {
-    font-size: 2.5rem;
-    padding-top: 2.5rem;
-    text-align: justify;
-}
-
-.research .project p {
-    font-size: 1.7rem;
-    text-align: justify;
-    color: rgb(75, 73, 73);
-}
-
-.research .project h5 {
-    font-size: 1.7rem;
-    font-weight: bold;
-    color: rgb(14, 158, 139);
-    text-align: justify;
-}
-
-
-
-.experience {
-    min-height: 80vh;
-    padding: 0 15rem;
-    padding-top: 4rem;
-}
-
-.experience .box-container {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 5rem;
-}
-
-.experience .box-container .box {
-    position: relative;
-    flex: 1 1 30rem;
-    border-left: .2rem solid rgb(14, 158, 139);
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 2rem;
-}
-
-.experience .box-container .box::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -1rem;
-    height: 2rem;
-    width: 2rem;
-    border-radius: 50%;
-    background: rgb(14, 158, 139);
-}
-
-.experience .box-container .box .content {
-    background: #fff;
-    padding: 1.5rem;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-    border-radius: .5rem;
-}
-
-.experience .box-container .box .content span {
-    color: #fff;
-    font-size: 1.7rem;
-    background: var(--main-color);
-    border-radius: 50rem;
-    padding: .4rem 1rem;
-}
-
-.experience .box-container .box .content h3 {
-    font-size: 2.5rem;
-    padding: .5rem 0;
-    color: #111;
-}
-
-.experience .box-container .box .content p {
-    font-size: 1.5rem;
-    color: #666;
-}
-
 .activities-awards {
     min-height: 80vh;
     padding: 0 15rem;
-    padding-top: 4rem;
+    text-align: justify;
 }
 
-/* .activities-awards .box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-} */
 
 .activities-awards .box .activities h1 {
     font-size: 2.5rem;
-    padding-top: 2rem;
+    padding-top: 3rem;
     padding-bottom: 1rem;
 }
 
@@ -639,50 +505,16 @@ header .navbar ul li a:hover {
 
 
 .contact {
-    min-height: 100vh;
     padding: 0 15rem;
-    padding-top: 4rem;
 }
 
 .contact .row {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
-}
-
-.contact .row .content {
-    flex: 1 1 30rem;
     padding-top: 3rem;
-    /* padding-left: 10rem; */
-    padding-bottom: 0;
 }
 
-.contact .row form {
-    flex: 1 1 45rem;
-    padding: 2rem;
-    margin: 2rem;
-    margin-bottom: 4rem;
-}
 
-.contact .row form .box {
-    padding: 1.5rem;
-    margin: 1rem 0;
-    background: #3333;
-    color: #fff;
-    text-transform: none;
-    font-size: 1.7rem;
-    width: 100%;
-}
-
-.contact .row form .box::placeholder {
-    text-transform: capitalize;
-}
-
-.contact .row form .message {
-    height: 15rem;
-    resize: none;
-}
 
 .contact .row .content .title {
     text-transform: uppercase;
@@ -706,23 +538,35 @@ header .navbar ul li a:hover {
 }
 
 .contact .row .content .follow {
-    font-size: 5rem;
+    font-size: 4rem;
     padding-top: 5rem;
 }
 
 .contact .row .content .follow a {
-    color: var(--yellow);
+    color: #222;
     padding-right: 2rem;
+}
+
+.contact .row .content .follow a:hover {
+    color: var(--yellow)
 }
 
 .top {
     position: fixed;
-    bottom: 7.5rem;
+    bottom: 5rem;
     right: 2rem;
     z-index: 100;
     display: none;
+    font-size: 4rem;
 }
 
+.top i {
+    color: var(--yellow);
+}
+
+.top i:hover{
+    color: #000;
+}
 
 
 
@@ -815,6 +659,13 @@ header .navbar ul li a:hover {
     .research .popup-image {
         top: 0;
         left: 0rem;
+    }
+
+    .research .popup-image span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding-left: 2rem;
     }
 
 }
