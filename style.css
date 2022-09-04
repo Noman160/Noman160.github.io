@@ -467,7 +467,7 @@ header .navbar ul li.active a {
 
 .activities-awards {
     min-height: 80vh;
-    padding: 0 15rem;
+    padding: 0 15rem 15rem;
     text-align: justify;
 }
 
