@@ -602,7 +602,7 @@ header .navbar ul li.active a {
     }
 
     .skill {
-        padding: 1rem 4rem;
+        padding: 1rem 4rem 30rem;
     }
 
     .portfolio {
@@ -610,7 +610,7 @@ header .navbar ul li.active a {
     }
 
     .research {
-        padding: 1rem 4rem;
+        padding: 1rem 4rem 15rem;
     }
 
     .experience {
@@ -618,7 +618,7 @@ header .navbar ul li.active a {
     }
 
     .activities-awards {
-        padding: 1rem 4rem;
+        padding: 1rem 4rem 30rem;
     }
 
     .contact {
